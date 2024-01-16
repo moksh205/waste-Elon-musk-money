@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.boxes {
+    background-color: rgba(26, 26, 26, 0.933);
+  
+    box-shadow: 3px 5px 55px rgb(140, 135, 135);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 boxes in each row */
+    grid-auto-flow: dense; /* Fill the gaps with items from the next row */
+    margin-bottom: 20px;
+    width: 1000px;
+    gap: 1rem;
+}
+
+.box {
+    background-color: hsla(0, 4%, 95%, 0.955);
+    height: 280px;
+    margin:10px 12px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 3px 2px 5px #555752e3;
+    padding: 10px;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: green;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+    width: 63px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    height: 36px;
+    width: 63px;
+    border-radius: 1rem;
+}
+
+#buy {
+    background-color: green;
+    color: aliceblue;
+}
+
+#sell {
+    background-color: rgb(130, 0, 0);
+    color: aliceblue;
+}
+
+.show-money {
+    margin-top: 10px;
+    text-align: center;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(4, 85, 4);
+    color: aliceblue;
+    font-weight: 800;
+    font-size:xx-large;
+    top: 0;
+    left: 0;
+    display: flex;
+    box-shadow: 9px 1px 22px #15c936e3;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1919; /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
+}
+
+.header img {
+    border-radius: 50%;
+    height: 100px; /* Make the image circular */
+    max-width: 100px; /* Adjust the maximum width of the image as needed */
+}
+
+.header h1 {
+    margin: 10px 0 0;
+    font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    color: #14c41d; /* Adjust the heading color as needed */
+}
+
+.footer-section a {
+    display: block;
+    margin-top: 5px;
+    color: #bbb; /* Adjust the link color as needed */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ef2a2a; /* Adjust the link color on hover as needed */
+}
+
