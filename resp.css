@@ -11,7 +11,6 @@ body {
 .container {
     margin-top: 10px;
     display: flex;
-    background-color: black;
     justify-content: center;
     min-height: 100vh;
 }
