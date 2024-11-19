@@ -1,5 +1,5 @@
 let money = document.querySelector("#money");
-let amount = 100000000000000000;
+let amount = 100000000000000;
 
 // Format number with commas
 const formatMoney = (value) => value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
